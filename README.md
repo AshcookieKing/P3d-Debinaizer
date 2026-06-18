@@ -4,15 +4,18 @@
 
 ## Скачать
 
-1. Откройте **[Releases](https://github.com/AshcookieKing/P3d-Debinaizer/releases)** (рекомендуется)  
-   **или** скачайте файл ниже в корне репозитория:
-2. **`P3D_Razbinarizer.exe`** (~155 MB) — один файл, .NET ставить не нужно.
+### [⬇ P3D_Razbinarizer.exe — Releases v1.0](https://github.com/AshcookieKing/P3d-Debinaizer/releases/latest/download/P3D_Razbinarizer.exe)
+
+**~155 MB** · один файл · .NET ставить не нужно
+
+> Не скачивайте маленький файл из списка файлов репозитория (это служебный LFS-pointer). Берите exe **только** по ссылке выше или во вкладке [Releases](https://github.com/AshcookieKing/P3d-Debinaizer/releases).
 
 ## Запуск
 
-Двойной клик по `P3D_Razbinarizer.exe` → перетащите `.p3d` → **Разбинарить**.
+1. Скачайте `P3D_Razbinarizer.exe`
+2. Двойной клик → перетащите `.p3d` → **Разбинарить**
 
-Результат: `имя_mlod.p3d` + `model.cfg`.
+Результат: `имя_mlod.p3d` + `model.cfg`
 
 ## CLI
 
@@ -21,12 +24,17 @@ P3D_Razbinarizer.exe model.p3d
 P3D_Razbinarizer.exe --overwrite model.p3d
 ```
 
-Параметры: `--no-cfg`, `--cfg-only`, `--overwrite`, `--no-mikero`, `--gui`
+| Параметр | Описание |
+|----------|----------|
+| `--no-cfg` | не создавать model.cfg |
+| `--cfg-only` | только model.cfg |
+| `--overwrite` | перезаписывать файлы |
+| `--no-mikero` | без Mikero DeP3d |
 
 ## Mikero DeP3d
 
-Если установлен [DePbo Tools](https://mikero.bytex.digital/), включите опцию «Mikero DeP3d» — `model.cfg` будет полнее (sections).
+Если установлен [DePbo Tools](https://mikero.bytex.digital/), включите «Mikero DeP3d» в окне — `model.cfg` будет с sections.
 
 ---
 
-© AshcookieKing · MIT
+© AshcookieKing
